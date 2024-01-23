@@ -1,0 +1,20 @@
+name: job-level-group-lease
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: example-group
+      cancel-in-progress: true
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Random step
+        run: sleep 120
+        
+      - name: Another Random step
+        run: sleep 60
