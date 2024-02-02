@@ -1,5 +1,5 @@
 # run-in-four-nines
-name: job-level-group-lease
+name: 4-9-job-level-group-lease
 
 on:
   workflow_dispatch:
