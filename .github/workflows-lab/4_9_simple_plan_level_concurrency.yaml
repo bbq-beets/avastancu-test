@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: example-group
+  group: hey-{example-group}
   cancel-in-progress: true
 
 jobs:
