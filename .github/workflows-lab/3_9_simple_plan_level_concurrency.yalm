@@ -1,0 +1,22 @@
+# run-in-four-nines
+name: plan-level-group-lease
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: hey-{example-group}
+  cancel-in-progress: true
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Random step
+        run: sleep 10
+        
+      - name: Another Random step
+        run: sleep 10
