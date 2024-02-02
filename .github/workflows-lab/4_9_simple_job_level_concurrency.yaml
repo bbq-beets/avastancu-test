@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Random step
-        run: sleep 10
+        run: sleep 50
         
       - name: Another Random step
         run: sleep 10
