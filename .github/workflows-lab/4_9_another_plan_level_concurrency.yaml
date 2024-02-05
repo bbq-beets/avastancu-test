@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: plan-example-group
+  group: plan-example-group}
   cancel-in-progress: true
 
 jobs:
