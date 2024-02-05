@@ -1,5 +1,5 @@
 # run-in-four-nines
-name: 4-9-plan-level-group-lease
+name: 4-9-plan-level-long-group-lease-name
 
 on:
   workflow_dispatch:
