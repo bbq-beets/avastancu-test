@@ -6,6 +6,7 @@ on:
 
 concurrency:
   group: plan-example-group
+  cancel-in-progress: true
 
 jobs:
   job-1:
