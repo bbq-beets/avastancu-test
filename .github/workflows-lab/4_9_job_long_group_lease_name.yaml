@@ -1,1 +1,21 @@
+# run-in-four-nines
+name: 4-9-job-level-group-lease
 
+on:
+  workflow_dispatch:
+
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: "namenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamenamename"
+      cancel-in-progress: true
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Random step
+        run: sleep 50
+        
+      - name: Another Random step
+        run: sleep 10
