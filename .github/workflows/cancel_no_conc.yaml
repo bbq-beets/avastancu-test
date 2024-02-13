@@ -1,4 +1,4 @@
-name: foo-always-no-conc
+name: cancel-no-conc
 
 on:
 
