@@ -1,1 +1,14 @@
+name: reused-with-embedded-conc
 
+concurrency: reusable-embedded-conc
+
+on:
+  workflow_call:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    concurrency: job-reusable
+    environment: test
+    steps:
+    - run: echo "Hello, world!"
