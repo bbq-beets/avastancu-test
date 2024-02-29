@@ -1,0 +1,11 @@
+# run-in-four-nines
+
+name: reusable-conc-and-embedded-conc
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-reusableA:
+    uses: bbq-beets/avastancu-test/.github/workflows-lab/reusable_with_embedded.yml@main
+    concurrency: reusable-top-level
