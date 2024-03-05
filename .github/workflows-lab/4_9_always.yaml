@@ -22,6 +22,6 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - name: always sleep 30
+      - name: don't always sleep 30
         run: |
           sleep 30
