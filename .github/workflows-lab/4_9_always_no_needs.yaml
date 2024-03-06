@@ -1,5 +1,5 @@
 # run-in-four-nines
-name: if-always-on-test-job
+name: no-needs-if-always
 
 on:
 
