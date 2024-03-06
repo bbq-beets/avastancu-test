@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency: 
-  group: bar
+  group: no-scrubs
   cancel-in-progress: true
 
 jobs:
