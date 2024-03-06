@@ -1,0 +1,26 @@
+# run-in-four-nines
+name: if-always-on-test-job
+
+on:
+
+  workflow_dispatch:
+
+concurrency: 
+  group: bar
+  cancel-in-progress: true
+
+jobs:
+  test:
+    if: always()
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - name: always sleep 30
+        run: |
+          sleep 30
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 2nd sleep 30
+        run: |
+          sleep 30
