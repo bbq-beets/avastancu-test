@@ -11,4 +11,7 @@ jobs:
     concurrency: job-reusable
     environment: test
     steps:
-    - run: echo "Hello, world!"
+    - name: First step
+      run: echo "Hello, world!"  
+    - name: Second step
+      run: sleep 70
