@@ -1,0 +1,16 @@
+name: reused-with-embedded-deadlock-conc
+
+concurrency: reusable-top-level
+
+on:
+  workflow_call:
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    concurrency: job-reusable
+    environment: test
+    steps:
+    - uses: actions/checkout@v4
+    - run: echo "Hello, world!"  
+    - run: sleep 60
