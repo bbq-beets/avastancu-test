@@ -8,5 +8,5 @@ concurrency: reusable-top-level
 
 jobs:
   call-reusableB:
-    uses: bbq-beets/avastancu-test/.github/workflows-lab/reusable_with_deadlock_embedded.yaml@main
+    uses: bbq-beets/avastancu-test/.github/workflows-lab/reusableB.yaml@main
     
