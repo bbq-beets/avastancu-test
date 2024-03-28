@@ -3,12 +3,14 @@ name: reusableB
 on:
   workflow_call:
 
+concurrency: reusable-top-level
+
 jobs:
   triage:
     runs-on: ubuntu-latest
-    concurrency: reusable-top-level
+    concurrency: job-reusable
     environment: test
     steps:
     - uses: actions/checkout@v4
     - run: echo "Hello, world!"  
-    - run: sleep 60
+    - run: sleep 30
