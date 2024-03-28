@@ -3,7 +3,7 @@
 name: reusable-conc-and-embedded-conc
 
 on:
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   call-reusableA:
