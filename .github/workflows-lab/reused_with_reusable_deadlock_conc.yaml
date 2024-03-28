@@ -1,7 +1,6 @@
 # run-in-four-nines
 
-name: reusable-conc-and-embedded-conc
-
+name: reusableA
 on:
   workflow_call:
 
