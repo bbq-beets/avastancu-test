@@ -6,6 +6,6 @@ on:
   workflow_call:
 
 jobs:
-  call-reusableA:
+  call-reusableB:
     uses: bbq-beets/avastancu-test/.github/workflows-lab/reusable_with_deadlock_embedded.yaml@main
     concurrency: reusable-top-level
