@@ -1,4 +1,4 @@
-name: reused-with-embedded-deadlock-conc
+name: reusableB
 
 on:
   workflow_call:
