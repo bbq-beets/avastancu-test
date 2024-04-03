@@ -8,7 +8,6 @@ concurrency: reusable-top-level
 jobs:
   triage:
     runs-on: ubuntu-latest
-    concurrency: job-reusable
     environment: test
     steps:
     - uses: actions/checkout@v4
