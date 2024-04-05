@@ -1,6 +1,6 @@
 # run-in-four-nines
 
-name: reusable-conc-and-embedded-conc
+name: deadlock-plan-with-reusable-s-job
 
 on:
   workflow_dispatch:
